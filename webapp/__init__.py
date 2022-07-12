@@ -4,8 +4,10 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return render_template('home/index.html')
-
-@app.route("/product")
-def product():
     return render_template('main/main-product.html')
+@app.route("/find")
+def find():
+    return render_template('main/find.html')
+@app.route("/login")
+def login():
+    return render_template('main/login.html')

@@ -1,48 +1,173 @@
-<section class="header-section">
-    <div class="top-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 left-header">
-                    <div class="menu">
-                        <img src="{{ url_for('static', filename='images/menu.png')}}" alt="" class="menu-img">
+{% block header %}
+<div class="row header-ads">
+    <img src="{{url_for('static', filename='images/header-ads.png')}}" alt="">
+</div>
+<section class="top-search-bar stick-bar">
+<div class="topbar">
+    <div class="container">
+        <div class="row menu-topbar ">
+            <div class=" col d-flex menu">
+                <div class="menu-dropdown">
+                    <a class="dropbtn pink-hover "><img src="{{url_for('static', filename='images/category.svg')}}" alt=""> Danh Mục</a>
+                    <div class="menu-dropdown-content">
+                        <div class="row menu-dropdown-content-detail">
+                            <div class="col"><a style="padding:10px;font-weight:bold;font-size:25px" class="color-pink">Danh Mục Sản Phẩm</a></div>
+                            <div class="row text-size-menu-items-dropdown">
+                                <div class="col-3">
+                                    {% for a in range(5) %}
+                                    <div class="row">
+                                        <a class="title-menu-items-dropdown"><img class="menu-mini-img" src="{{url_for('static', filename='images/menu-items1.png')}}" alt=""><b>Sữa bột cao cấp</b></a>
+                                        <div class="col">
+                                            <a><b>Thương hiệu</b></a>
+                                            <a>Meiji nhập khẩu</a>
+                                            <a>Meiji nội địa</a>
+                                            <a>Colosbaby</a>
+                                            <a>Enfa</a>
+                                            <a>Nestlé </a>
+                                            <a>Friso</a>
+                                            <a>Vinamilk</a>
+                                            <a>Blackmore</a>
+                                            <a>PediaSure</a>
+                                            <a>Aptamilk</a>
+                                            <a>Morinaga</a>
+                                            <a>Similac</a>
+                                        </div>
+                                        <div class="col">
+                                            <a><b>Loại Sữa</b></a>
+                                            <a>Sữa Mỹ</a>
+                                            <a>Sữa Nhật</a>
+                                            <a>Sữa Úc</a>
+                                            <a>Châu Âu</a>
+                                            <a>Sữa Khác</a>
+                                            <br>
+                                            <a><b>Theo tuổi</b></a>
+                                            <a>0 - 1 tuổi</a>
+                                            <a>1 - 2 tuổi</a>
+                                            <a> > 2 tuổi</a>
+                                            <a> Sữa bầu</a>
+                                            <a>Sữa người lớn</a>
+                                        </div>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                                <div class="col-3">
+                                    <div class="row">
+                                        <a class="title-menu-items-dropdown"><img class="menu-mini-img" src="{{url_for('static', filename='images/menu-items2.png')}}" alt=""><b>Bỉm tả khuyến mãi</b></a>
+                                        <div class="col">
+                                            <a><b>Thương hiệu</b></a>
+                                            <a>Meiji nhập khẩu</a>
+                                            <a>Meiji nội địa</a>
+                                            <a>Colosbaby</a>
+                                            <a>Enfa</a>
+                                            <a>Nestlé </a>
+                                            <a>Friso</a>
+                                            <a>Vinamilk</a>
+                                            <a>Blackmore</a>
+                                            <a>PediaSure</a>
+                                            <a>Aptamilk</a>
+                                            <a>Morinaga</a>
+                                            <a>Similac</a>
+                                        </div>
+                                        <div class="col">
+                                            <a><b>Loại Sữa</b></a>
+                                            <a>Sữa Mỹ</a>
+                                            <a>Sữa Nhật</a>
+                                            <a>Sữa Úc</a>
+                                            <a>Châu Âu</a>
+                                            <a>Sữa Khác</a>
+                                            <br>
+                                            <a><b>Theo tuổi</b></a>
+                                            <a>0 - 1 tuổi</a>
+                                            <a>1 - 2 tuổi</a>
+                                            <a> > 2 tuổi</a>
+                                            <a> Sữa bầu</a>
+                                            <a>Sữa người lớn</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="row">
+                                        <a class="title-menu-items-dropdown"><img class="menu-mini-img" src="{{url_for('static', filename='images/menu-items4.png')}}" alt=""><b>Đồ dùng mẹ & bé</b></a>
+                                        <div class="col">
+                                            <a>Bình sữa, phụ kiện</a>
+                                            <a>Đồ dùng bé ngủ</a>
+                                            <a>Sản phẩm cho mẹ</a>
+                                            <a>Túi trữ sữa</a>
+                                            <a>Khăn ướt, khô, vãi khô</a>
+                                            <a>Ti ngậm cho bé</a>
+                                            <a>Dụng cụ vệ sinh</a>
+                                            <a>Xe đẩy, đai , địu</a>
+                                            <a> Tắm gội, vệ sinh</a>
+                                            <a>Máy hâm, tiệt trùng</a>
+                                            <a>Máy hút sữa</a>
+                                            <a>Mỹ phẩm cho mẹ</a>
+                                            <a>Dụng cụ bé ăn</a>
+                                            <a>Miếng lót thấm sữa</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="row">
+                                        <a class="title-menu-items-dropdown"><img class="menu-mini-img" src="{{url_for('static', filename='images/menu-items3.png')}}" alt=""><b>Thời trang cho bé</b></a>
+                                        <div class="col">
+                                            <a>Bình sữa, phụ kiện</a>
+                                            <a>Đồ dùng bé ngủ</a>
+                                            <a>Sản phẩm cho mẹ</a>
+                                            <a>Túi trữ sữa</a>
+                                            <a>Khăn ướt, khô, vãi khô</a>
+                                            <a>Ti ngậm cho bé</a>
+                                            <a>Dụng cụ vệ sinh</a>
+                                            <a>Xe đẩy, đai , địu</a>
+                                            <a> Tắm gội, vệ sinh</a>
+                                            <a>Máy hâm, tiệt trùng</a>
+                                            <a>Máy hút sữa</a>
+                                            <a>Mỹ phẩm cho mẹ</a>
+                                            <a>Dụng cụ bé ăn</a>
+                                            <a>Miếng lót thấm sữa</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="logo-img">
-                        <a href="">
-                            <img src="{{ url_for('static', filename='images/thumbnail.png')}}" alt="">
-                        </a>
-                    </div>
-                    <div class="form-search">
-                        <input type="text" placeholder="Tim Thuoc..." class="form-control">
-                    </div>
-                    <div class="shop-cart">
-                        <small>0</small>
-                        <img src="https://thuocgreen.vn/static/svg_mevabe/cart.svg" alt="">
-                    </div>
-                </div>
-                <div class="col-md-6 right-header">
-                    <ul class="list-cate">
-                        <div class="close-menu">X</div>
-                        <li class="list-item"><a href="">tin tức</a> </li>
-                        <li class="list-item"><a href="">Truyền thông</a> </li>
-                        <li class="list-item d-block"><a href="">giỏ hàng</a> </li>
-                        <li class="list-item"><a href="" class="border-btn">đăng nhập</a> </li>
-                        <li class="list-item"><a href="" class="border-btn">đăng ký</a> </li>
-                    </ul>
-                    <div class="coating"></div>
                 </div>
 
+                <a href="/login" class="pink-hover" >Mua hàng và CSKH <span class="color-pink"><b>1800 6609</b></span></a>
+                <a href="/find" class="pink-hover"><img src="{{url_for('static', filename='images/localtion-dark.svg')}}" alt="">Tìm 669 siêu thị</a>
+            </div>
+            <div class="col d-flex">
+                <a href="/login" class="color-pink"><img src="{{url_for('static', filename='images/localtion-dark.svg')}}" alt=""> Nhập địa chỉ để mua hàng giao <span style="font-weight:bold;font-style:italic">Siêu Tốc 1h</span></a>
+
+                <a href="/login" class="login pink-hover"><img class="img-login" src="{{url_for('static', filename='images/user-dask.svg')}}" alt=""><b>Login</b></a>
             </div>
         </div>
     </div>
-    <div class="main-menu" id="cate-fixed">
-        <div class="container">
-            <ul class="list-cate">
-                <li class="list-item"><a href="">Sản Phẩm Thuốc</a> </li>
-                <li class="list-item"><a href="">Thực Phẩm Chức Năng</a> </li>
-                <li class="list-item"><a href="">Dụng Cụ Y Tế</a> </li>
-                <li class="list-item"><a href="">Khuyến Mãi</a> </li>
-                <li class="list-item"><a href="">Liên hệ</a> </li>
-            </ul>
+</div>
+<div class="searchbar">
+    <div class="container">
+        <div class="row p-2" style="align-items:center">
+            <div class="col-2 logo-searchbar">
+                <a href="/"><img src="{{url_for('static', filename='images/logo_home.svg')}}" style="width:125px" alt=""></a>
+            </div>
+            <div class="col-6 search-form-control">
+                <form action="" class="search-box">
+                    <input class="input-search" type="text" placeholder="Search" autocomplete="off" id="search_query" name="search_query">
+                    <img class="btn-search-box" src="{{url_for('static', filename='images/search-new.svg')}}" alt="">
+                </form>
+
+            </div>
+            <div class="col-2 cart-box" style="text-align: center">
+                <div class="items-cart">
+                    <a href=""><img src="{{url_for('static', filename='images/cart-top.svg')}}" alt=""><span class="top-text-box-cart">0</span></img></a>
+                </div>
+            </div>
+            <div class="col-2 notice-box">
+                <div class="items-noti">
+                    <a href=""><img src="{{url_for('static', filename='images/notify-dark-top.svg')}}" alt=""><span class="top-text-box-noti">2</span></img></a>
+                </div>
+            </div>
         </div>
     </div>
+</div>
 </section>
+{% endblock %}

@@ -1,0 +1,76 @@
+/* Destop */
+@media only screen and (max-width:1999px){
+
+	
+}
+@media only screen and (max-width: 1366px){
+
+}
+@media only screen and (max-width: 1170px){
+
+}
+
+
+/* Tablet */
+@media only screen and (max-width: 991px){
+
+}
+@media only screen and (max-width: 786px){
+	/* main */
+	.name-title{
+		font-size: 0.65rem;
+	}
+	.info-title-product{
+		font-size: 0.65rem;
+	}
+	.price-old{
+		font-size: 0.45rem;
+	}
+	.percent-off{
+		font-size: 0.5rem;
+	}
+	.title-product{
+		line-height: 0.75rem;
+	}
+	.box-detail-news{
+		font-size: 11px;
+	}
+
+	/* footer */
+	.phone-img{
+		width: 10rem;
+	}
+	.title-footer{
+		font-size: 1rem;
+	}
+	.icon-download{
+		width: 5.5rem;
+		height: 2rem;
+	}
+	.qr-icon-detail{
+		width: 4rem;
+	}
+	.text-banner-footer{
+		font-size: 9px;
+	}
+	.title-text-banner{
+		font-size: 12px;
+	}
+	.color-radius{
+		font-size: 12px;
+	}
+	.img-bct{
+		width: 100px;
+	}
+	.img-icon{
+		width: 37px;
+	}
+}
+
+
+/* Mobile */
+@media only screen and (max-width: 412px){
+	[class*="col-"] {
+	  width: 100%;
+	}
+}

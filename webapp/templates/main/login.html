@@ -1,0 +1,64 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<link rel="stylesheet" href="{{url_for('static', filename='bootstrap/css/bootstrap.min.css')}}">
+	<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body> -->
+	{% extends 'layout/layout.html' %}
+	{% block title %} Login {% endblock %}
+	{% block content %}
+	<section class="Login-page">
+		<div class="container" style="max-width: 1020px;">
+			<div class="row login-box">
+				<div class="col-7 login-form">
+					<div class="box-input">
+						<span class="font-18">Nhập số điện thoại của Bố Mẹ để tiếp tục:</span>
+						<div class="input-number">
+							<img class="img-input-number" src="{{url_for('static', filename='images/ensign-phone.png')}}" alt="">
+							<input class="fashion-input" placeholder="Nhập số điện thoại" type="number">
+						</div>
+						<div class="button-next">
+							<span class="text-button-next">TIẾP TỤC</span>
+						</div>
+						<div class="d-flex" style="justify-content: space-between;align-items: center;flex-wrap: nowrap;">
+							<div class="line" style="width:42%"></div>
+							<a style="font-size:16px">Hoặc</a>
+							<div class="line" style="width:42%"></div>
+						</div>
+						<div class="continue-facebook input-number">
+							<img class="img-input-number" style="position: absolute;left: 15px" src="{{url_for('static', filename='images/icon-fb.png')}}" alt=""><a class="font-18">Tiếp tục bằng Facebook</a>
+						</div>
+						<div class="continue-gg input-number">
+							<img class="img-input-number" style="position: absolute;left: 15px" src="{{url_for('static', filename='images/icon-gg.png')}}" alt=""><a class="font-18">Tiếp tục bằng Google</a>
+						</div>
+						<div class="check-box">
+							<div class="check1">
+						        <label class="custom-control">
+							        <input class="custom-checkbox" type="checkbox" checked="" name="check1">
+									<span class="font-12">Tôi đã đọc và đồng ý với các <a href="https://concung.com/dieu-khoan-su-dung.html">điều khoản</a> của Concung.com</span>
+							    </label>
+						    </div>
+						    <div class="check2">
+						        <label class="custom-control">
+						            <input class="custom-checkbox" type="checkbox" checked="" name="check2">
+								    <span class="font-12 ">Tôi đã đọc và đồng ý với <a class="cc-apple-blue" href="https://concung.com/chinh-sach-bao-mat-thong-tin.html" target="_blank">chính sách bảo vệ thông tin cá nhân</a> của Concung.com</span>
+						        </label>
+						    </div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-5 full-img">
+					<img class="banner-login" src="{{url_for('static', filename='images/login-banner.png')}}" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	{% endblock %}
+<!-- </body>
+</html> -->

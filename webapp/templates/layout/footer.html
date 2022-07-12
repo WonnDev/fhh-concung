@@ -1,111 +1,60 @@
-<footer class="footer-pc">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-5">
-                <div class="logo-img">
-                    <img src="public/images/thumbnail.png" alt="">
-                </div>
-                <ul class="contact-left">
-                    <li>
-                        <a href=""><strong>
-                                TRANG WEB CHÍNH THỨC <br>
-                                CÔNG TY CỔ PHẦN THƯƠNG MẠI XUẤT NHẬP KHẨU <br>
-                                GREEN PLUS PHARMACY
-                            </strong>
-                        </a></li>
-                    <li><a href="">Hotline: <strong>0869071068</strong> – CSKH: <strong>0869071068</strong></a></li>
-                    <li><a href="">Email: <strong>info@greenpluspharmacy.com</strong></a></li>
-                    <li><a href="">Trụ sở: <strong>67 Bình Giã, Phường 13, Quận Tân Bình, HCM</strong></a></li>
-                    <li><a href="">
-                            <img src="public/images/DMCA_badge_grn_60w.png" alt="">
-                        </a></li>
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <h5>VỀ GREEN +</h5>
-                <ul class="contact-left">
-                    <li><a href="">Hướng dẫn đặt hàng</a></li>
-                    <li><a href="">Chính sách bảo mật</a></li>
-                    <li><a href="">Chính sách quy định chung</a></li>
-                </ul>
-                <h5>CHÍNH SÁCH</h5>
-                <ul class="contact-left">
-                    <li><a href="">Điều khoản sử dụng</a></li>
-                    <li><a href="">Chính sách mua hàng</a></li>
-                    <li><a href="">Chính sách bảo mật</a></li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <h5>HỖ TRỢ KHÁCH HÀNG</h5>
-                <ul class="contact-left">
-                    <li><a href="">CSKH: <strong>0869071068</strong></a></li>
-                    <li><a href="">Hotline: <strong>0869071068</strong></a></li>
-                    <li><a href="">Mua hàng: <strong>0869071068 (8h-21h)*</strong></a></li>
-                    <p>(Tất cả các ngày trong tuần)</p>
-                </ul>
-                <h5>CÁCH THỨC THANH TOÁN</h5>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="logo-payment">
-                            <img src="public/images/momo@3x.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="logo-payment">
-                            <img src="public/images/momo@3x.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="logo-payment">
-                            <img src="public/images/momo@3x.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="logo-payment">
-                            <img src="public/images/momo@3x.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="logo-payment">
-                            <img src="public/images/momo@3x.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="logo-payment">
-                            <img src="public/images/momo@3x.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <h5>ĐƠN VỊ VẬN CHUYỂN</h5>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="logo-payment">
-                            <img src="public/images/momo@3x.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="logo-payment">
-                            <img src="public/images/momo@3x.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="logo-payment">
-                            <img src="public/images/momo@3x.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-<footer class="footer-mobile">
-    <div class="container">
-        <ul class="list-menu">
-            <li><a href=""></a>Danh muc</li>
-            <li><a href=""></a>Uu Dai</li>
-            <li><a href=""></a>Home</li>
-            <li><a href=""></a>Dat Hang</li>
-            <li><a href=""></a>Tai Khoan</li>
-        </ul>
-    </div>
-</footer>
+
+{% block footer %}
+<section class="footer-group">
+	<div class="container">
+		<div class="row menu-qr">
+			<div class="col-6">
+				<p class="color-pink title-footer">Tải ngay app con cưng để mua sắm nhanh chóng</p>
+				<div class="d-flex" style="justify-content: center ;flex-wrap:wrap;align-items: center">
+					<div class="p-1"><img class="icon-download" src="{{url_for('static', filename='images/app-ios.png')}}" alt=""></div>
+					<div class="p-1"><img class="icon-download" src="{{url_for('static', filename='images/app-android.png')}}" alt=""></div>
+				</div>
+				<div class="qr-icon"><img class="qr-icon-detail" src="{{url_for('static', filename='images/scanapp.svg')}}" alt=""></div>
+				<p class="text-inline-qr">Quét mã tải ngay</p>
+			</div>
+			<div class="col-6">
+				<img class="phone-img" src="{{url_for('static', filename='images/app-info.png')}}" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="background-footer" style="background-color:#ffe9f1">
+		<div class="container">
+			<div class="row text-banner-footer" >
+				<div class="col-4">
+					<p class="title-text-banner">Công ty cổ phần con cưng </p>
+					<a href=""><p>Thành viên của Tập đoàn <b>CCI Groupb</b></p></a>
+					<a href=""><p><b>Email:</b> cskh@concung.com</p></a>
+					<a href=""><p><b>Điện thoại:</b> 028 73006609</p></a>
+					<a href=""><p><b>ĐKKD:</b> 101-103 Trần Quang Khải, P.Tân Định, Q1, TP.HCM</p></a>
+					<a href=""><p><b>Văn phòng:</b> Tầng 14 Tòa nhà Phú Mỹ hưng Tower, 08 Hoàng Văn Thái, P.Tân Phú, Q.7 , TP.HCM</p></a>
+				</div>
+				<div class="col-2">
+					<p class="title-text-banner">Về Con Cưng</p>
+					<a href=""><p>Giới thiệu về Con Cưng</p></a>
+					<a href=""><p>Tuyển dụng khối Văn Phòng</p></a>
+					<a href=""><p>Tuyển dụng khối Siêu Thị</p></a>
+					<a href=""><p>Chính sách bảo mật</p></a>
+					<a href=""><p>Điều khoản sử dụng</p></a>
+				</div>
+				<div class="col-3">
+					<p class="title-text-banner">Hổ trợ khách hàng</p>
+					<a href=""><p>Tra cứu hóa đơn</p></a>
+					<a href=""><p>Mua & giao nhận Online</p></a>
+					<a href=""><p>Quy định & hình thức thanh toán</p></a>
+					<a href=""><p>Bảo hành & Bảo trì</p></a>
+					<a href=""><p>Đổi trả & Hoàn tiền</p></a>
+				</div>
+				<div class="col-3">
+					<p class="title-text-banner"> Kết nối với chúng tôi</p>
+					<div class="group-icons">
+						<a class="img-icon" href="" class="img-icon"><img src="{{url_for('static', filename='images/facebook.svg')}}" alt=""></a>
+						<a class="img-icon" href="" class="img-icon"><img src="{{url_for('static', filename='images/youtube.svg')}}" alt=""></a>
+						<a class="img-icon" href="" class="img-icon"><img src="{{url_for('static', filename='images/instagram.svg')}}" alt=""></a>
+					</div>
+					<div class="img-bct"><img class="img-fluid" src="{{url_for('static', filename='images/noticed@3x.png')}}" alt=""></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}

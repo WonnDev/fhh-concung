@@ -1,0 +1,118 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<link rel="stylesheet" href="{{url_for('static', filename='bootstrap/css/bootstrap.min.css')}}">
+	<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body> -->
+	{% extends 'layout/layout.html' %}
+	{% block title %} Find me {% endblock%}
+	{% block content %}
+	<section class="index-find">
+		<div class="container" style="max-width:1170px !important;">
+			<div class="row">
+				<div class="title-find-localtion">
+					<a style="color:#555" href="">Trang Chủ > </a>
+					<a style="color:#555" href="">Chuỗi hệ thống siêu thị mẹ bầu và em bé</a>
+				</div>
+				<div class="col d-flex">
+					<div class="find-icon-detail">
+						<img style="padding:15px" src="{{url_for('static', filename='images/find-ic-store.svg')}}" alt="">
+					</div>
+					<span class="find-info">669 siêu thị</span>
+				</div>
+				<div class="col d-flex">
+					<div class="find-icon-detail">
+						<img style="padding:15px" src="{{url_for('static', filename='images/find-ic-store2.svg')}}" alt="">
+					</div>
+					<span class="find-info">5,265,242<br>thành viên</span>
+				</div>
+				<div class="col d-flex">
+					<div class="find-icon-detail">
+						<img style="padding:15px" src="{{url_for('static', filename='images/find-ic-time.svg')}}" alt="">
+					</div>
+					<span class="find-info">Mở cửa 8-22h<br>cả CN & Lễ tết</span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="line"></div>
+				<div class="col-7">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d250839.95368387454!2d106.64582775209594!3d10.782619471072733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zY-G7rWEgaMOgbmcgY29uY3VuZy5jb20gdHLDqm4gVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1656418494928!5m2!1svi!2s" width="650" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+				<div class="col-4">
+					<div class="row">
+						<div class="col-7">
+							<select class="form-custom font-12">
+								<option value="0">Chọn Tỉnh/Thành phố</option>
+								<option value="29">TP.Hồ Chí Minh (209)</option>
+								<option value="1">An Giang (14)</option>
+								<option value="2">Bà Rịa - Vũng Tàu (21)</option>
+								<option value="6">Bắc Ninh (3)</option>
+								<option value="7">Bến Tre (6)</option>
+								<option value="9">Bình Dương (57)</option>
+								<option value="10">Bình Phước (8)</option>
+								<option value="11">Bình Thuận (9)</option>
+								<option value="8">Bình Định (7)</option>
+								<option value="12">Cà Mau (7)</option>
+								<option value="13">Cần Thơ (13)</option>
+								<option value="21">Gia Lai (7)</option>
+								<option value="24">Hà Nội (10)</option>
+								<option value="25">Hà Tĩnh (1)</option>
+								<option value="26">Hải Dương (1)</option>
+								<option value="27">TP.Hải Phòng (4)</option>
+								<option value="28">Hậu Giang (2)</option>
+								<option value="32">Khánh Hòa (20)</option>
+								<option value="33">Kiên Giang (13)</option>
+								<option value="34">Kon Tum (4)</option>
+								<option value="36">Lâm Đồng (20)</option>
+								<option value="38">Lào Cai (1)</option>
+								<option value="39">Long An (22)</option>
+								<option value="41">Nghệ An (2)</option>
+								<option value="42">Ninh Bình (2)</option>
+								<option value="43">Ninh Thuận (6)</option>
+								<option value="45">Phú Yên (3)</option>
+								<option value="46">Quảng Bình (4)</option>
+								<option value="47">Quảng Nam (7)</option>
+								<option value="48">Quảng Ngãi (8)</option>
+								<option value="49">Quảng Ninh (5)</option>
+								<option value="50">Quảng Trị (4)</option>
+								<option value="51">Sóc Trăng (6)</option>
+								<option value="53">Tây Ninh (21)</option>
+								<option value="54">Thái Bình (1)</option>
+								<option value="55">Thái Nguyên (2)</option>
+								<option value="56">Thanh Hóa (1)</option>
+								<option value="57">Thừa Thiên Huế (5)</option>
+								<option value="58">Tiền Giang (12)</option>
+								<option value="15">Đà Nẵng (15)</option>
+								<option value="59">Trà Vinh (3)</option>
+								<option value="61">Vĩnh Long (8)</option>
+								<option value="62">Vĩnh Phúc (1)</option>
+								<option value="63">Yên Bái (1)</option>
+								<option value="16">Đắk Lắk (12)</option>
+								<option value="17">Đắk Nông (3)</option>
+								<option value="19">Đồng Nai (54)</option>
+								<option value="20">Đồng Tháp (14)</option>
+                            </select>
+						</div>
+						<div class="col-5">
+							<select class=" form-custom font-12">
+								<option value="0">Quận/Huyện</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row" style="padding-top:15px">
+				<img src="{{url_for('static', filename='images/concungshop.jpg')}}" alt="">
+			</div>
+		</div>
+		
+	</section>
+	{% endblock %}
+<!-- </body>
+</html> -->
